@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tamil Reading app</title>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+	<script language="javascript" src="app1.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body onload= "collectdata()">
+<body>
+		<center> <div class="headh1">
+			<h1> GUESS THE IMAGE <h1>
+		</div></center>
+		<div class="imgfram">
+			<div class="imgtb">
+		<center> <div id="imagehd" > <br>
+		<img class="imghd1" id="slide" width="700" height="450" onclick="checkans()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAflM2WTJLHLYxlwDSARbCAP9JdhZqmi1VkA&usqp=CAU"> 
+		<h2 id="answerh2"></h2>
+		</div>
+		<div id="imagehd1">
+			<img class="imghd1" id="slide1" width="700" height="450" onclick="checkans2()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoD-z-zjGyR_oceFZ7S7x8-KfO935ZcV5dog&usqp=CAU"> 
+		<h2 id="answerh3"></h2>
+		</div> </center>
+	    </div>
+	    </div>
+	    <center>
+		<div id="wordholder" class="wrdhd">
+		<h1><label id="words" style="color: red" >    </label> </h1>
+		</div>
+		<div class="headh1">
+		<button class="buttonst" style=" background-color: white; font-size: 26px; font-weight: bold;"   onclick="previousword()" > Previous</button>
+		<button class="buttonst" style=" background-color: white; font-size: 26px; font-weight: bold;"   onclick="changepic()" > Next</button>
+		</div> </center>
+</body>
+</html>
